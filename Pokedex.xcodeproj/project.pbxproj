@@ -19,6 +19,7 @@
 		E3B0F21C28C88C88006FD1C4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0F21A28C88C88006FD1C4 /* NetworkManager.swift */; };
 		E3B0F21D28C88C88006FD1C4 /* Network in Resources */ = {isa = PBXBuildFile; fileRef = E3B0F21B28C88C88006FD1C4 /* Network */; };
 		E3B0F22028C88E4C006FD1C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E3B0F21F28C88E4B006FD1C4 /* Kingfisher */; };
+		E3B0F22228C89787006FD1C4 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0F22128C89787006FD1C4 /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E3B0F21828C8868A006FD1C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E3B0F21A28C88C88006FD1C4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E3B0F21B28C88C88006FD1C4 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
+		E3B0F22128C89787006FD1C4 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B0F20A28C855B9006FD1C4 /* PokedexView.swift */,
+				E3B0F22128C89787006FD1C4 /* PokemonDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				E36DD78528C8530E00C09022 /* PokedexApp.swift in Sources */,
 				E3B0F20F28C87F2F006FD1C4 /* Pokemon.swift in Sources */,
+				E3B0F22228C89787006FD1C4 /* PokemonDetailView.swift in Sources */,
 				E3B0F21928C8868A006FD1C4 /* Extensions.swift in Sources */,
 				E3B0F21728C885B7006FD1C4 /* PokemonViewModel.swift in Sources */,
 				E3B0F21C28C88C88006FD1C4 /* NetworkManager.swift in Sources */,
