@@ -10,13 +10,12 @@ import Kingfisher
 
 struct PokemonCell: View {
     let pokemon: Pokemon
-    let viewModel: PokemonViewModel
-    let backgroundColor: Color
+    let viewModel: PokemonCellViewModel
     
-    init(pokemon: Pokemon, viewModel: PokemonViewModel) {
+    init(pokemon: Pokemon) {
         self.pokemon = pokemon
-        self.viewModel = viewModel
-        self.backgroundColor = Color(viewModel.backgroundColor(forType: pokemon.type))
+        self.viewModel = PokemonCellViewModel(pokemon: pokemon)
+//        self.backgroundColor = Color(viewModel.backgroundColor(forType: pokemon.type))
     }
     
     var body: some View {
@@ -49,14 +48,14 @@ struct PokemonCell: View {
                 }
             }
         }
-        .background(backgroundColor)
+        .background(Color(viewModel.backgroundColor))
         .cornerRadius(12)
-        .shadow(color: backgroundColor, radius: 6, x: 0, y: 0)
+        .shadow(color: Color(viewModel.backgroundColor), radius: 6, x: 0, y: 0)
     }
 }
 
 struct PokemonCell_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonCell(pokemon: MOCK_POKEMON, viewModel: PokemonViewModel())
+        PokemonCell(pokemon: MOCK_POKEMON)
     }
 }
