@@ -7,21 +7,42 @@
 
 import Foundation
 
-struct Pokemon: Codable, Identifiable {
+struct Pokemon: Decodable, Identifiable {
     let id: Int
     let name: String
     let imageUrl: String
-    let type: String
-    let attack: Int
-    let defense: Int
+    let description: String
     let height: Int
     let weight: Int
+    let attack: Int
+    let defense: Int
+    let type: String
+    var evolutionChain: [EvolutionChain]?
 }
 
-let MOCK_POKEMON: [Pokemon] = [
-    .init(id: 0, name: "Bulbasaur", imageUrl: "bulbasaur", type: "poison", attack: 49, defense: 49, height: 7, weight: 69),
-    .init(id: 1, name: "Ivysaur", imageUrl: "bulbasaur", type: "poison", attack: 49, defense: 49, height: 7, weight: 69),
-    .init(id: 2, name: "Venusaur", imageUrl: "bulbasaur", type: "poison", attack: 49, defense: 49, height: 7, weight: 69),
-    .init(id: 3, name: "Charmander", imageUrl: "bulbasaur", type: "poison", attack: 49, defense: 49, height: 7, weight: 69),
-    .init(id: 4, name: "Charmeleon", imageUrl: "bulbasaur", type: "poison", attack: 49, defense: 49, height: 7, weight: 69),
-]
+enum Type: String, Decodable {
+    case poison
+    case fire
+    case water
+    case flying
+}
+
+struct EvolutionChain: Decodable {
+    let id: String?
+    let name: String?
+}
+
+
+
+let MOCK_POKEMON = Pokemon(id: 1,
+                           name: "Bulbasaur",
+                           imageUrl: "https://firebasestorage.googleapis.com/v0/b/pokedex-bb36f.appspot.com/o/pokemon_images%2F2CF15848-AAF9-49C0-90E4-28DC78F60A78?alt=media&token=15ecd49b-89ff-46d6-be0f-1812c948e334",
+                           description: "Bulbasaur can be seen napping in bright sunlight.There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger.",
+                           height: 7,
+                           weight: 69,
+                           attack: 49,
+                           defense: 49,
+                           type: "Poison",
+                           evolutionChain: nil)
+    
+

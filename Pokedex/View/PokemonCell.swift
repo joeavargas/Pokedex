@@ -57,6 +57,6 @@ struct PokemonCell: View {
 
 struct PokemonCell_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonCell(pokemon: MOCK_POKEMON[3], viewModel: PokemonViewModel())
+        PokemonCell(pokemon: MOCK_POKEMON, viewModel: PokemonViewModel())
     }
 }
