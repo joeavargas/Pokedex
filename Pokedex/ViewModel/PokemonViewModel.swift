@@ -10,10 +10,6 @@ import SwiftUI
 class PokemonViewModel: ObservableObject {
     @Published var pokemon = [Pokemon]()
     
-    init(){
-        fetchPokemon()
-    }
-    
     func fetchPokemon() {
         NetworkManager.shared.fetchPokemon { pokemon in
             self.pokemon = pokemon
