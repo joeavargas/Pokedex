@@ -33,7 +33,7 @@ struct BarView: View {
                     
                     // Fill
                     Capsule()
-                        .frame(width: value > 250 ? CGFloat(200) : CGFloat(value), height: 20).animation(.default)
+                        .frame(width: value > 100 ? CGFloat(100) : CGFloat(value), height: 20).animation(.default)
                         .foregroundColor(color)
                 }
                 Spacer()
