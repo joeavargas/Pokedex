@@ -36,7 +36,7 @@ struct PokedexView: View {
                 
                 VStack {
                     if showFilterButtons {
-                        ActionButtonView(imageName: "fire", backgroundColor: .red, show: $showFilterButtons){
+                        ActionButtonView(imageName: "flame", backgroundColor: .red, show: $showFilterButtons){
                             filterApplied.toggle()
                             showFilterButtons.toggle()
                             viewModel.filterPokemon(by: "fire")
@@ -48,20 +48,50 @@ struct PokedexView: View {
                             viewModel.filterPokemon(by: "poison")
                         }
                         
-                        ActionButtonView(imageName: "water", backgroundColor: .blue, show: $showFilterButtons){
+                        ActionButtonView(imageName: "drop", backgroundColor: .blue, show: $showFilterButtons){
                             filterApplied.toggle()
                             showFilterButtons.toggle()
                             viewModel.filterPokemon(by: "water")
                         }
                         
-                        ActionButtonView(imageName: "lightning", backgroundColor: .yellow, show: $showFilterButtons){
+                        ActionButtonView(imageName: "bolt.fill", backgroundColor: .yellow, show: $showFilterButtons){
                             filterApplied.toggle()
                             showFilterButtons.toggle()
                             viewModel.filterPokemon(by: "electric")
                         }
+                        
+                        ActionButtonView(imageName: "hand.thumbsup", backgroundColor: .orange, show: $showFilterButtons){
+                            filterApplied.toggle()
+                            showFilterButtons.toggle()
+                            viewModel.filterPokemon(by: "normal")
+                        }
+
+                        ActionButtonView(imageName: "crown", backgroundColor: .pink, show: $showFilterButtons){
+                            filterApplied.toggle()
+                            showFilterButtons.toggle()
+                            viewModel.filterPokemon(by: "fairy")
+                        }
+                        
+                        ActionButtonView(imageName: "brain", backgroundColor: .teal, show: $showFilterButtons){
+                            filterApplied.toggle()
+                            showFilterButtons.toggle()
+                            viewModel.filterPokemon(by: "psychic")
+                        }
+                        
+                        ActionButtonView(imageName: "airplane", backgroundColor: .teal, show: $showFilterButtons){
+                            filterApplied.toggle()
+                            showFilterButtons.toggle()
+                            viewModel.filterPokemon(by: "flying")
+                        }
+                        
+                        ActionButtonView(imageName: "ant", backgroundColor: .indigo, show: $showFilterButtons){
+                            filterApplied.toggle()
+                            showFilterButtons.toggle()
+                            viewModel.filterPokemon(by: "bug")
+                        }
                     }
                     
-                    let imageName = filterApplied ? "refresh" : "filter"
+                    let imageName = filterApplied ? "arrow.clockwise" : "line.3.horizontal.decrease.circle"
                     ActionButtonView(imageName: imageName, height: 36, width: 36, show: $showFilterButtons){
                         filterApplied ? filterApplied.toggle() : showFilterButtons.toggle()
                     }.rotationEffect(.init(degrees: self.showFilterButtons ? 180 : 0))

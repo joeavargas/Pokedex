@@ -18,7 +18,7 @@ struct ActionButtonView: View {
     
     var body: some View {
         Button(action: { action() }, label: {
-            Image(imageName)
+            Image(systemName: imageName)
                 .resizable()
                 .frame(width: width, height: height)
                 .padding(16)
