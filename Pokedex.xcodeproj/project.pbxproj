@@ -23,6 +23,7 @@
 		E3B0F23028CC5539006FD1C4 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0F22F28CC5539006FD1C4 /* BarChartView.swift */; };
 		E3B0F23228CC6116006FD1C4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0F23128CC6116006FD1C4 /* NetworkManager.swift */; };
 		E3B0F23628CC6193006FD1C4 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0F23528CC6193006FD1C4 /* NavigationLazyView.swift */; };
+		E3D9526B28D36E9500951F04 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9526A28D36E9500951F04 /* ActionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E3B0F22F28CC5539006FD1C4 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		E3B0F23128CC6116006FD1C4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E3B0F23528CC6193006FD1C4 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		E3D9526A28D36E9500951F04 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				E3B0F20C28C85753006FD1C4 /* PokemonCell.swift */,
 				E3B0F22D28CC5530006FD1C4 /* BarView.swift */,
 				E3B0F22F28CC5539006FD1C4 /* BarChartView.swift */,
+				E3D9526A28D36E9500951F04 /* ActionButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				E3B0F22228C89787006FD1C4 /* PokemonDetailView.swift in Sources */,
 				E3B0F21928C8868A006FD1C4 /* Extensions.swift in Sources */,
 				E3B0F21728C885B7006FD1C4 /* PokemonViewModel.swift in Sources */,
+				E3D9526B28D36E9500951F04 /* ActionButtonView.swift in Sources */,
 				E3B0F22C28CC4D55006FD1C4 /* PokemonCellViewModel.swift in Sources */,
 				E3B0F20B28C855B9006FD1C4 /* PokedexView.swift in Sources */,
 				E3B0F20D28C85753006FD1C4 /* PokemonCell.swift in Sources */,

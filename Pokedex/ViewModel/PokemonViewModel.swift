@@ -9,6 +9,8 @@ import SwiftUI
 
 class PokemonViewModel: ObservableObject {
     @Published var pokemon = [Pokemon]()
+    @Published var filteredPokemon = [Pokemon]()
+    
     
     func fetchPokemon() {
         NetworkManager.shared.fetchPokemon { pokemon in
@@ -31,5 +33,9 @@ class PokemonViewModel: ObservableObject {
         case "fairy": return .systemPink
         default: return .systemIndigo
         }
+    }
+    
+    func filterPokemon(by filter: String) {
+        filteredPokemon = pokemon.filter({ $0.type == filter })
     }
 }
