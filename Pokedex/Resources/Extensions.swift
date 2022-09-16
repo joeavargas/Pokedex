@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension Data {
     func parseData(removeString string: String) -> Data? {
@@ -14,4 +15,8 @@ extension Data {
         guard let data = parsedDataString?.data(using: .utf8) else {return nil}
         return data
     }
+}
+
+extension Color {
+    static let darkGray = Color("darkGray")
 }

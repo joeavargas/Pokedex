@@ -30,6 +30,7 @@ struct PokedexView: View {
                     }
                 } //: SCROLLVIEW
                 .navigationTitle("Pokedex")
+                .background(Color.darkGray)
                 .onAppear {
                     viewModel.fetchPokemon()
                 }
@@ -95,7 +96,7 @@ struct PokedexView: View {
                     ActionButtonView(imageName: imageName, height: 36, width: 36, show: $showFilterButtons){
                         filterApplied ? filterApplied.toggle() : showFilterButtons.toggle()
                     }.rotationEffect(.init(degrees: self.showFilterButtons ? 180 : 0))
-                }//: STACK
+                }//: VSTACK
                 .padding()
                 .animation(.spring())
             }//: ZSTACK
