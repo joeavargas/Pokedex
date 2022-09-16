@@ -26,7 +26,6 @@ struct PokemonDetailView: View {
                 .ignoresSafeArea()
             
             colorScheme == .dark ? Color.darkGray.offset(y: 300) : Color.white.offset(y: 300)
-//            Color.white.offset(y: 300)
             
             ScrollView {
                 // MARK: POKEMON IMAGE
