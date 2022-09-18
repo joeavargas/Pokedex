@@ -11,6 +11,7 @@ import Kingfisher
 struct PokemonDetailView: View {
     let pokemon: Pokemon
     let viewModel: PokemonCellViewModel
+    @Environment(\.colorScheme) var colorScheme
     
     init(pokemon: Pokemon) {
         self.pokemon = pokemon
@@ -24,7 +25,7 @@ struct PokemonDetailView: View {
             LinearGradient(gradient: Gradient(colors: [Color(viewModel.backgroundColor), Color.white]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
-            Color.white.offset(y: 300)
+            colorScheme == .dark ? Color.darkGray.offset(y: 300) : Color.white.offset(y: 300)
             
             ScrollView {
                 // MARK: POKEMON IMAGE
@@ -53,7 +54,7 @@ struct PokemonDetailView: View {
                     
                     HStack {Spacer()}
                 }
-                .background(Color.white)
+                .background(colorScheme == .dark ? Color.darkGray : Color.white)
                 .cornerRadius(40)
                 .padding(.top, -40)
                 .zIndex(-1)
@@ -78,5 +79,8 @@ struct PokemonDetailView: View {
 struct PokemonDetailView_Previews: PreviewProvider {
     static var previews: some View {
         PokemonDetailView(pokemon: MOCK_POKEMON)
+            .preferredColorScheme(.light)
+        PokemonDetailView(pokemon: MOCK_POKEMON)
+            .preferredColorScheme(.dark)
     }
 }
