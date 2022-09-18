@@ -15,7 +15,6 @@ struct PokemonCell: View {
     init(pokemon: Pokemon) {
         self.pokemon = pokemon
         self.viewModel = PokemonCellViewModel(pokemon: pokemon)
-//        self.backgroundColor = Color(viewModel.backgroundColor(forType: pokemon.type))
     }
     
     var body: some View {
