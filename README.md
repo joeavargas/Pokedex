@@ -11,9 +11,8 @@ Pokemon index built with SwiftUI using URLSession for the network layer and King
 ## 📝 Features 
 - Scroll through the Pokemon and tap on any of them to see their profile details
 
-**[DEMO]**
-
-[LINK TO YOUTUBE DEMO VIDEO]
+## 🎥 Demo
+[YouTube](https://youtu.be/fIqRpmhzXC8)
 
 ## 📲 Installation
 
